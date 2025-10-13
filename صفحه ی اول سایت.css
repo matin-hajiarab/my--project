@@ -1,0 +1,36 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+display: flex;
+justify-content: space-between;
+background-color:  #333; 
+padding: 10px 20px;
+}
+
+.top-bar .left a {
+color: #fff;
+text-decoration: none;
+}
+
+.top-bar .right a {
+color: #fff;
+text-decoration: none;
+margin-left: 20px;
+font-size: 16px;
+}
+
+.top-bar a:hover {
+color: #ff9f00;
+}
+
+.banner {
+width: 100%;
+text-align: center;
+margin-top: 15px;
+background-image: url('https://www.jowhareh.com/images/Jowhareh/galleries_2/large_aac697a8-230d-4e27-991b-3f777598e85c.webp');
+background-size: cover; 
+background-position: center center;
+height: 550px; /* ارتفاع برای همخوانی با حداکثر ارتفاع تصویر */
+}
