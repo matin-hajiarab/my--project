@@ -4,28 +4,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>جیک جیکستون</title>
-<link rel="stylesheet" href="صفحه ی اول سایت.css" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <div class="logo">جیک جیکستون</div>
-  <nav>
-    <ul>
-      <li><a href="صفحه ی اول سایت.html">خانه</a></li>
-      <li><a href="پرندگان بومی .html">پرندگان بومی</a></li>
-      <li><a href="پرندگان زینتی.html">پرندگان زینتی</a></li>
-      <li><a href="محصولات.html">محصولات</a></li>
-      <li><a href="آموزش و نگه داری.html">آموزش و نگهداری</a></li>
-      <li><a href="درباره ی ما.html">درباره ی ما</a></li>
-    </ul>
-  </nav>
-  <a href="صفحه لاگین.html" class="btn-login">عضویت / ورود</a>
-</header>
+<?php
+  include("header.html")
+  ?>
 <section class="banner">
   <div class="banner-content">
     <h1>با دنیای پرندگان بیشتر آشنا شوید</h1>
     <p>فروشگاه تخصصی پرندگان زینتی و بومی، همراه با آموزش‌های کاربردی نگهداری</p>
-    <a href="صفحه لاگین.html"><button>اکنون عضو شوید</button></a>
+    <a href="login.php"><button>اکنون عضو شوید</button></a>
   </div>
 </section>
 <section class="intro">
@@ -61,10 +50,8 @@
     </div>
   </div>
 </section>
-<section class="education">
-  <h3>آموزش و نگه داری</h3>
-  <p>با استفاده از کلیپ ها آموزشی ما پرندگان خود را در بهترین حالت ببینید</p>
-  <a href="صفحه لاگین.html"><button> عضویت در سایت</button></a>
-</section>
+<?php
+  include("footer.html")
+  ?>
 </body>
 </html>

@@ -22,92 +22,7 @@
     text-decoration: none;
     color: inherit;
   }
-        /* ====== هدر ====== */
-  header {
-    background-color: #1a237e;
-    color: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  }
-  header .logo {
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  nav ul {
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  nav ul li a {
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    transition: color 0.3s;
-  }
-  nav ul li a:hover {
-    color: #ffca28;
-  }
-  .btn-login {
-  background-color: #ffca28;
-  color: #1a237e;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.btn-login:hover {
-  background-color: #ffc107cc;
-}
-/* ====== فوتر ====== */
-footer {
-    background-color: #1a237e;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    margin-top: 40px;
-  }
-  footer a {
-    color: #ffca28;
-    margin: 0 5px;
-    text-decoration: none;
-  }
-  footer a:hover {
-    text-decoration: underline;
-  }
-  section.education h3 {
-  font-size: 32px;
-  margin-bottom: 25px;
-  font-weight: 900;
-}
-  section.education p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.5;
-}
-section.education button {
-  background-color: #ffca28;
-  border: none;
-  padding: 14px 40px;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 30px;
-  cursor: pointer;
-  color: #1a237e;
-  box-shadow: 0 5px 15px rgba(255,202,40,0.6);
-  transition: background-color 0.3s;
-}
+  
 /* =============== محصولات=============== */
 section.products {
   max-width: 1100px;
@@ -180,20 +95,9 @@ section.products h3 {
   font-size: 18px;
 }
     </style>
-    <header>
-        <div class="logo">جیک جیکستون</div>
-        <nav>
-          <ul>
-            <li><a href="صفحه ی اول سایت.html">خانه</a></li>
-            <li><a href="پرندگان بومی .html">پرندگان بومی</a></li>
-            <li><a href="پرندگان زینتی.html">پرندگان زینتی</a></li>
-            <li><a href="محصولات.html">محصولات</a></li>
-            <li><a href="آموزش و نگه داری.html">آموزش و نگهداری</a></li>
-            <li><a href="درباره ی ما.html">درباره ی ما</a></li>
-          </ul>
-        </nav>
-        <a href="صفحه لاگین.html" class="btn-login">عضویت / ورود</a>
-      </header>
+      <?php
+  include("header.html")
+  ?>
       <section class="products">
         <h3> غذای پرندگان </h3>
         <div class="product-list">
@@ -336,12 +240,8 @@ section.products h3 {
           </div>
         </div>
     </section>
-      <footer>
-    <section class="education">
-      <h3>آموزش و نگه داری</h3>
-      <p>با استفاده از کلیپ ها آموزشی ما پرندگان خود را در بهترین حالت ببینید</p>
-      <a href="صفحه لاگین.html"><button> عضویت در سایت</button></a>
-    </section>
-    </footer>
+    <?php
+  include("footer.html")
+  ?>
 </body>
 </html>
