@@ -68,55 +68,55 @@ nav ul li a:hover {
   background-color: #ffc107cc;
 }
 .banner {
-  height: 600px;
+  width: 100%;
+  height: 550px;
   position: relative;
+  background-image: url("https://cdn.nody.ir/files/2021/06/13/nody-%D8%B9%DA%A9%D8%B3-%D8%B7%D8%A7%D9%88%D9%88%D8%B3-%D9%81%D9%88%D9%84-%D8%A7%DA%86-%D8%AF%DB%8C-1623569467.jpg"); /* عکس پرنده */
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  padding: 20px;
   color: white;
-  padding: 0 20px;
+  text-align: center;
+  margin-top: 20px;
 }
+
+/* لایه تاریک برای خوانایی متن */
 .banner::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(26, 35, 126, 0.6);
-  z-index: 1;
-  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background: rgba(0, 0, 0, 0.45);
 }
+
 .banner-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
 }
 .banner-content h1 {
-  font-size: 54px;
-  margin-bottom: 20px;
-  font-weight: 900;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  font-size: 2.3rem;
+  margin-bottom: 10px;
 }
+
 .banner-content p {
-  font-size: 20px;
-  margin-bottom: 35px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
-.banner-content button {
-  background-color: #ffca28;
+
+.banner button {
+  padding: 10px 25px;
+  background: #ffcc00;
   border: none;
-  padding: 14px 40px;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 30px;
+  border-radius: 28px;
   cursor: pointer;
-  color: #1a237e;
-  box-shadow: 0 5px 15px rgba(255,202,40,0.6);
-  transition: background-color 0.3s;
+  transition: 0.3s;
+  font-size: 1.2rem;
 }
-.banner-content button:hover {
-  background-color: #ffc107cc;
+
+.banner button:hover {
+  background: #ffb300;
 }
 /* =============== معرفی============== */
 section.intro {
@@ -158,20 +158,22 @@ section.products h3 {
   gap: 25px;
 }
 .product-card {
+  display: block; /* برای لینک */
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  text-decoration: none; /* حذف خط زیر لینک */
+  color: inherit;       /* رنگ متن مثل قبل */
 }
+
 .product-card:hover {
   transform: translateY(-7px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
 .product-card img {
   width: 100%;
   height: 180px;
