@@ -1,0 +1,245 @@
+/* ============تنظیمات=============== */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  direction: rtl;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============== ناوبری=============== */
+header {
+  background-color: #1a237e;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+header .logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: default;
+  user-select: none;
+}
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+nav ul li a {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #ffca28;
+}
+.btn-login {
+  background-color: #ffca28;
+  color: #1a237e;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  font-size: 16px;
+}
+.btn-login:hover {
+  background-color: #ffc107cc;
+}
+.banner {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-image: url("https://cdn.nody.ir/files/2021/06/13/nody-%D8%B9%DA%A9%D8%B3-%D8%B7%D8%A7%D9%88%D9%88%D8%B3-%D9%81%D9%88%D9%84-%D8%A7%DA%86-%D8%AF%DB%8C-1623569467.jpg"); /* عکس پرنده */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* لایه تاریک برای خوانایی متن */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+.banner-content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner button {
+  padding: 10px 25px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+.banner button:hover {
+  background: #ffb300;
+}
+/* =============== معرفی============== */
+section.intro {
+  max-width: 1100px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+section.intro h2 {
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: #1a237e;
+  font-weight: 900;
+}
+section.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =============== محصولات=============== */
+section.products {
+  max-width: 1100px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+}
+section.products h3 {
+  font-size: 28px;
+  color: #1a237e;
+  margin-bottom: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+.product-card {
+  display: block; /* برای لینک */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* حذف خط زیر لینک */
+  color: inherit;       /* رنگ متن مثل قبل */
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom: 3px solid #ffca28;
+  flex-shrink: 0;
+}
+.product-info {
+  padding: 15px 20px;
+  text-align: right;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-info h4 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #1a237e;
+  font-weight: 700;
+}
+.product-info p {
+  font-size: 14px;
+  color: #666;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-info span.price {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #ff6f00;
+  font-size: 18px;
+}
+section.education {
+  background-color: #1a237e;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+section.education h3 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+section.education p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.5;
+}
+section.education button {
+  background-color: #ffca28;
+  border: none;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #1a237e;
+  box-shadow: 0 5px 15px rgba(255,202,40,0.6);
+  transition: background-color 0.3s;
+}
+section.education button:hover {
+  background-color: #ffc107cc;
+}
